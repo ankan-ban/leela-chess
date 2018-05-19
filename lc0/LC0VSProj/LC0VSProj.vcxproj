@@ -11,9 +11,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\analyzer\analyzer.cc" />
+    <ClCompile Include="..\src\analyzer\table.cc" />
     <ClCompile Include="..\src\chess\bitboard.cc" />
     <ClCompile Include="..\src\chess\board.cc" />
     <ClCompile Include="..\src\chess\position.cc" />
+    <ClCompile Include="..\src\chess\uciloop.cc" />
     <ClCompile Include="..\src\engine.cc" />
     <ClCompile Include="..\src\main.cc" />
     <ClCompile Include="..\src\mcts\node.cc" />
@@ -25,24 +28,31 @@
     <ClCompile Include="..\src\neural\network_mux.cc" />
     <ClCompile Include="..\src\neural\network_random.cc" />
     <ClCompile Include="..\src\neural\writer.cc" />
-    <ClCompile Include="..\src\optionsparser.cc" />
     <ClCompile Include="..\src\selfplay\game.cc" />
     <ClCompile Include="..\src\selfplay\loop.cc" />
     <ClCompile Include="..\src\selfplay\tournament.cc" />
-    <ClCompile Include="..\src\uciloop.cc" />
     <ClCompile Include="..\src\utils\commandline.cc" />
+    <ClCompile Include="..\src\utils\filesystem.win32.cc" />
     <ClCompile Include="..\src\utils\optionsdict.cc" />
+    <ClCompile Include="..\src\utils\optionsparser.cc" />
     <ClCompile Include="..\src\utils\random.cc" />
+    <ClCompile Include="..\src\utils\string.cc" />
     <ClCompile Include="..\src\utils\transpose.cc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\src\analyzer\analyzer.h" />
+    <ClInclude Include="..\src\analyzer\table.h" />
     <ClInclude Include="..\src\chess\bitboard.h" />
     <ClInclude Include="..\src\chess\board.h" />
+    <ClInclude Include="..\src\chess\callbacks.h" />
+    <ClInclude Include="..\src\chess\position.h" />
+    <ClInclude Include="..\src\chess\uciloop.h" />
     <ClInclude Include="..\src\engine.h" />
     <ClInclude Include="..\src\mcts\callbacks.h" />
     <ClInclude Include="..\src\mcts\node.h" />
     <ClInclude Include="..\src\mcts\search.h" />
     <ClInclude Include="..\src\neural\cache.h" />
+    <ClInclude Include="..\src\neural\encoder.h" />
     <ClInclude Include="..\src\neural\factory.h" />
     <ClInclude Include="..\src\neural\loader.h" />
     <ClInclude Include="..\src\neural\network.h" />
@@ -62,11 +72,15 @@
     <ClInclude Include="..\src\utils\commandline.h" />
     <ClInclude Include="..\src\utils\cppattributes.h" />
     <ClInclude Include="..\src\utils\exception.h" />
+    <ClInclude Include="..\src\utils\filesystem.h" />
     <ClInclude Include="..\src\utils\hashcat.h" />
     <ClInclude Include="..\src\utils\mutex.h" />
     <ClInclude Include="..\src\utils\optional.h" />
     <ClInclude Include="..\src\utils\optionsdict.h" />
+    <ClInclude Include="..\src\utils\optionsparser.h" />
     <ClInclude Include="..\src\utils\random.h" />
+    <ClInclude Include="..\src\utils\smallarray.h" />
+    <ClInclude Include="..\src\utils\string.h" />
     <ClInclude Include="..\src\utils\transpose.h" />
   </ItemGroup>
   <ItemGroup>
